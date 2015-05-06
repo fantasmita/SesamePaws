@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="6" tilewidth="70" tileheight="70" nextobjectid="14">
+ <tileset firstgid="1" name="tiles_spritesheet" tilewidth="70" tileheight="70" spacing="2">
+  <image source="../images/tiles_spritesheet.png" width="790" height="934"/>
+  <tile id="120">
+   <properties>
+    <property name="sprite" value="floppy"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="144" name="city" tilewidth="70" tileheight="70">
+  <image source="../images/city.png" width="1600" height="600"/>
+ </tileset>
+ <layer name="backgroundLayer" width="50" height="6">
+  <data encoding="csv">
+137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,
+137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,
+137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,224,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,
+137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,
+137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,
+137,311,137,291,284,285,286,287,288,289,290,291,292,293,294,295,296,297,276,277,137,279,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137,137
+</data>
+ </layer>
+ <layer name="blockedLayer" width="50" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,119,97,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,119,107,97,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,119,107,107,97,0,0,0,0,0,0,0,0,0,0,0,0,119,107,97,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,119,97,0,0,0,0,0,0,0,0,0,0,0,0,
+107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,107,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,107,107,107,107,107
+</data>
+ </layer>
+ <objectgroup name="catnipLayer">
+  <object id="11" gid="88" x="746" y="209">
+   <properties>
+    <property name="sprite" value="nip"/>
+    <property name="type" value="catnip"/>
+   </properties>
+  </object>
+  <object id="12" gid="88" x="1543" y="279">
+   <properties>
+    <property name="sprite" value="nip"/>
+    <property name="type" value="catnip"/>
+   </properties>
+  </object>
+  <object id="13" gid="88" x="3024" y="99">
+   <properties>
+    <property name="sprite" value="nip"/>
+    <property name="type" value="catnip"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="knowledgeLayer">
+  <object id="1" gid="121" x="740" y="345">
+   <properties>
+    <property name="sprite" value="floppy"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="3" gid="121" x="2000" y="150">
+   <properties>
+    <property name="sprite" value="floppy"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="4" gid="121" x="3261" y="245">
+   <properties>
+    <property name="sprite" value="floppy"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="5" gid="110" x="915" y="272">
+   <properties>
+    <property name="sprite" value="cd"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="6" gid="110" x="2451" y="199">
+   <properties>
+    <property name="sprite" value="cd"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="7" gid="99" x="1226" y="315">
+   <properties>
+    <property name="sprite" value="drive"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="8" gid="99" x="2248" y="92">
+   <properties>
+    <property name="sprite" value="drive"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="9" gid="99" x="2727" y="214">
+   <properties>
+    <property name="sprite" value="drive"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+  <object id="10" gid="99" x="223" y="341">
+   <properties>
+    <property name="sprite" value="drive"/>
+    <property name="type" value="knowledge"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
