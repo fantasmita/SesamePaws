@@ -56,15 +56,9 @@ SideScroller.Game.prototype = {
     this.knowledgeSound = this.game.add.audio('sweetKnowledge');
     this.nipSound = this.game.add.audio('meow');
 	this.levelMusic = this.game.add.audio('level1');
-
-    //display labels
-    this.showLabels();
 	
 	//start levelMusic
 	this.levelMusic.play();
-
-    //display labels
-    this.showLabels();
   },
   
  //find objects in a Tiled layer that containt a property called "type" equal to a certain value
@@ -155,7 +149,6 @@ SideScroller.Game.prototype = {
 
     //update score
     this.playerScore++;
-    this.scoreLabel.txt = this.playerScore;
 
     //remove sprite
     collectable.destroy();
@@ -175,7 +168,6 @@ SideScroller.Game.prototype = {
 
     //update score
     this.playerScore+=5;
-    this.scoreLabel.txt = this.playerScore;
 
     //remove sprite
     collectable.destroy();
@@ -204,12 +196,5 @@ SideScroller.Game.prototype = {
       
       //we use this to keep track whether it's ducked or not
       this.player.isDucked = true;
-  },
-  showLabels: function(){
-    //score text
-    var text = "0";
-    var style = { font: "40px Arial", fill: "#fff", align: "center" };
-    this.scoreLabel = this.game.add.text(50, 50, text, style);
-    this.scoreLabel.fixedToCamera = true;
   }
 };
